@@ -1,7 +1,7 @@
 {
   "name": "csharp-lsp-roslyn",
   "description": "C# language server for code intelligence",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "Your Name"
   },
@@ -10,8 +10,16 @@
   "strict": false,
   "lspServers": {
     "roslyn": {
-      "command": "roslyn-language-server.cmd",
-      "args": ["--stdio", "--autoLoadProjects"],
+      "command": "dotnet",
+      "args": [
+        "dnx",
+        "-y",
+        "--prerelease",
+        "roslyn-language-server",
+        "--",
+        "--stdio",
+        "--autoLoadProjects"
+      ],
       "extensionToLanguage": {
         ".cs": "csharp"
       }
