@@ -1,0 +1,12 @@
+{
+  "name": "csharp-lsp-roslyn",
+  "owner": {
+    "name": "Your Name"
+  },
+  "plugins": [
+    {
+      "name": "csharp-lsp-roslyn",
+      "source": "./"
+    }
+  ]
+}
